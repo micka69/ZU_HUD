@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#hud {
+    position: absolute;
+    right: 16px;
+    bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.circle-container {
+    width: 55px;
+    height: 55px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0, 0.5);
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.circle-container.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.circle-bg {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+}
+
+.circle-fill {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    transition: height 0.3s ease;
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#microphone {
+    position: absolute;
+    right: 20px;
+    bottom: 26px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#microphone i {
+    font-size: 24px;
+    width: 24px;
+    text-align: center;
+}
+
+#mic-range {
+    font-size: 14px;
+}
+
+#mic-icon, #mic-mute-icon {
+    display: none;
+}
+
+#mic-range-indicator {
+    position: absolute;
+    left: -60px; /* Ajustez cette valeur selon vos besoins */
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.range-bar {
+    width: 15px;
+    height: 5px;
+    background-color: #5f5f5f;
+    transition: background-color 0.3s ease;
+}
+
+.range-bar.active {
+    background-color: #00ff00;
+}
+
+#health .circle-fill { background-color: rgba(255, 34, 34, 0.8); }
+#hunger .circle-fill { background-color: rgba(255, 166, 0, 0.8); }
+#thirst .circle-fill { background-color: rgba(51, 153, 255, 0.8); }
+#armor .circle-fill { background-color: rgba(0, 60, 255, 0.8); }
+#oxygen .circle-fill { background-color: rgba(0, 229, 255, 0.8); }
+
+#health .icon { font-size: 24px; }
+#hunger .icon { font-size: 20px; }
+#thirst .icon { font-size: 22px; }
+#armor .icon { font-size: 22px; }
+#oxygen .icon { font-size: 22px; }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+    <title>HUD ESX Legacy</title>
+</head>
+<body>
+    <div id="hud">
+        <div class="circle-container" id="oxygen">
+            <div class="circle-bg"></div>
+            <div class="circle-fill"></div>
+            <i class="fas fa-lungs icon"></i>
+        </div>
+        <div class="circle-container" id="armor">
+            <div class="circle-bg"></div>
+            <div class="circle-fill"></div>
+            <i class="fas fa-shield-alt icon"></i>
+        </div>
+        <div class="circle-container" id="health">
+            <div class="circle-bg"></div>
+            <div class="circle-fill"></div>
+            <i class="fas fa-heart icon"></i>
+        </div>
+        <div class="circle-container" id="hunger">
+            <div class="circle-bg"></div>
+            <div class="circle-fill"></div>
+            <i class="fas fa-utensils icon"></i>
+        </div>
+        <div class="circle-container" id="thirst">
+            <div class="circle-bg"></div>
+            <div class="circle-fill"></div>
+            <i class="fas fa-tint icon"></i>
+        </div>
+    </div>
+
+    <div id="microphone">  
+        <div id="mic-range-indicator"></div>
+
+            <i class="fas fa-microphone" id="mic-icon"></i>
+            <i class="fas fa-microphone-slash" id="mic-mute-icon"></i>
+            <span id="mic-range"></span>
+ 
+            <div class="range-bar"></div>
+            <div class="range-bar"></div>
+            <div class="range-bar"></div>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
